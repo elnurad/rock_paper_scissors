@@ -19,13 +19,14 @@ let playRound = () => {
     return forPrint;  
 }
   
-
+let i
 
 let game = () => {
     for ( let i = 0; i < 5; i++){
-        console.log(playRound())
-        console.log(`Hello ${i}`)
+        const gameResult = playRound()
+        console.log(gameResult)
        
     }
 }
-game()
+console.log(game())
+console.log(playRound())
